@@ -1,0 +1,178 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700&display=swap);
+
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Rubik, sans-serif;
+}
+
+
+/* .wrapper {
+  min-height: 100%;
+  flex: 1 1 auto;
+} */
+
+
+/* start header*/
+
+.header {
+  margin-bottom: 50px;
+  padding: 40px 15px 50px;
+  background: linear-gradient(93deg, #4CB8C4 0%, #3CD3AD 100%), #232323;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: 1.18;
+  color: #fff;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto; 
+  max-width: 460px;
+  border-radius: 6px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-city {
+  padding: 15px;
+  flex-grow: 1;
+  /* width: 100%; */
+  color: #000;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.input-city::placeholder {
+  color: rgb(126, 126, 126);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bth-show {
+  padding: 15px 26px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  border-radius: 6px;
+  background-color: #ED3052;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bth-show:hover {
+  background-color: #d42d4c;
+}
+
+/* end header */
+/* start card*/
+
+.card {
+  margin: 0 auto;
+  padding: 30px;
+  width: 360px;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(27, 108, 114, 0.25);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: 10px;
+
+  width: calc(100% - 20px);
+  height: 100%;
+
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(27, 108, 114, 0.25);
+  z-index: -1;
+}
+
+.card__name-city {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #000;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card__name-city span {
+  padding: 3px 5px;
+  border-radius: 6px;
+  background: #E5464F;
+
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.card__weather {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__value {
+  color: #000;
+  font-family: inherit;
+  font-size: 92px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.card__value sup {
+  font-size: 60px;
+}
+
+.card__desc {
+  color: #000;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* end card */
+/* start footer */
+
+.footer {
+  padding: 8px 15px;
+  text-align: center;
+  background: #E3F1EE;
+
+}
+.footer__link {
+  color: #2E7695;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
